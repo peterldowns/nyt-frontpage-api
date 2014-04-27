@@ -3,7 +3,7 @@ from datetime import date
 from datetime import datetime
 from datetime import timedelta
 
-__version__ = '0.1.1'
+__version__ = '0.1.2'
 
 def get_image_url(date):
   """ Return the URL to the frontpage of the NYT on a certain date.
