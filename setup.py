@@ -8,8 +8,6 @@ REQUIREMENTS = [
     line.strip() for line in open(os.path.join(os.path.dirname(__file__),
                                                'requirements.txt')).readlines()]
 
-os.chdir(os.path.normpath(os.path.join(os.path.abspath(__file__), os.pardir)))
-
 setup(
     name='nytfrontpage',
     version=nytfrontpage.__version__,
@@ -35,4 +33,3 @@ setup(
           'Programming Language :: Python :: 2.7',
     ],
 )
-

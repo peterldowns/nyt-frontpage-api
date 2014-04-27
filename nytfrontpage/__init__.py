@@ -1,10 +1,9 @@
 # coding: utf-8
-import requests
 from datetime import date
 from datetime import datetime
 from datetime import timedelta
 
-__version__ = '0.1.0'
+__version__ = '0.1.1'
 
 def get_image_url(date):
   """ Return the URL to the frontpage of the NYT on a certain date.
@@ -29,6 +28,7 @@ def get_image_data(date):
   :returns: a `str`, the contents of the image of the frontpage of the NYT on
       the requested date, or `None` if that image is not available.
   """
+  import requests
   response = requests.get(get_image_url(date), headers={
       'Host' : 'hsadvisory.lmsd.org',
       'User-Agent' : ('Mozilla/5.0 (Macintosh; Intel Mac OS X 10.7; '
