@@ -5,13 +5,6 @@ A small library to retrieve cover pages of the New York Times as images. Turns
 out the NYT hosts them and they're all just sitting there. Who would have
 thought?
 
-Install
--------
-
-.. code-block:: shell
-
-  $ pip install nytfrontpage
-
 Usage
 -----
 
